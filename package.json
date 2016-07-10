@@ -10,6 +10,37 @@
     "type": "git",
     "url": "git+https://github.com/beezy12/react-game-tutorial.git"
   },
+  "eslintConfig": {
+    "env": {
+      "mocha": true,
+      "node": true,
+      "es6": true,
+      "browser": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+      "res": true,
+      "app": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 0,
+      "no-undef": 0,
+      "no-extra-semi": 0,
+      "no-redeclare": 0,
+      "comma-dangle": 0,
+      "no-mixed-spaces-and-tabs": 0,
+      "no-extra-boolean-cast": 0,
+      "no-empty": 0
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    }
+  },
   "keywords": [],
   "author": "Brian Stumbaugh <brian.stumbaugh@gmail.com>",
   "license": "MIT",
