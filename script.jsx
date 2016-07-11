@@ -1,4 +1,4 @@
-// video 3. random number of stars be generated. that's all for this video
+
 
 var StarsFrame = React.createClass({
   render: function() {
@@ -42,6 +42,27 @@ var AnswerFrame = React.createClass({
   }
 })
 
+var NumbersFrame = React.createClass({
+  render: function() {
+
+    var numbers = []
+
+    for(var i = 1; i <= 9; i++) {
+      numbers.push(
+        <div className="number">{i}</div>
+      )
+    }
+
+    return (
+      <div id="numbers-frame">
+        <div className="well">
+          {numbers}
+        </div>
+      </div>
+    )
+  }
+})
+
 
 var Game = React.createClass({
   render: function() {
@@ -54,6 +75,8 @@ var Game = React.createClass({
           <ButtonFrame />
           <AnswerFrame />
         </div>
+
+        <NumbersFrame />
       </div>
     )
   }
@@ -61,4 +84,4 @@ var Game = React.createClass({
 
 
 
-ReactDOM.render(<Game />,document.getElementById('container'));
+ReactDOM.render(<Game />, document.getElementById('container'));
