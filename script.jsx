@@ -1,4 +1,7 @@
-
+// ** NOTICE: for a child component to access the state of it's parent component, the
+// parent must pass the state to the child component as a property. that is whats
+// being done with <AnswerFrame selectedNumbers={this.state.selectedNumbers}/>
+// then you can use selectedNumbers in the AnswerFrame by using {state.props.selectedNumbers}
 
 var StarsFrame = React.createClass({
   render: function() {
